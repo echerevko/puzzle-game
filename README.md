@@ -12,7 +12,7 @@
 ## Run the App Locally
 
 - Install all dependencies. Use npm install
-- To run client at http://localhost:808/ use npm start
+- To run client at http://localhost:8080/ use npm start
 
 ## Directory structure
 
