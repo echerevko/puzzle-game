@@ -1,45 +1,35 @@
-# Starter kit
+# Puzzle Game
 
-This starter kit includes Jest, Babel, Sass, and webpack to hopefully help with reducing the time spent on boilerplate stuff.
+## Preview https://dainty-sunburst-938f94.netlify.app/
 
-## Prerequisites
+## Used Technologies
 
-- [Node.js](https://nodejs.org/) (version 14.x or newer)
+- JavaScript
+- Node.js
+- Webpack
+- Babel
 
-## Development
+## Run the App Locally
 
-First install dependencies:
+- Install all dependencies. Use npm install
+- To run client at http://localhost:808/ use npm start
 
-```sh
-npm install
-```
+## Directory structure
 
-### Running in development mode
+- The script entry point is src/index.js
+- The DOM tree is index.html
+- The styles are in the document /src/styles/styles.css
 
-To start the project in development mode:
+## Styles, UI, UX
 
-```sh
-npm start
-```
+### CSS, UI:
 
-### Testing
+- the game used regular CSS for styling. The game is not responsive and adapted up to desktop size
 
-To run unit tests:
+### UX/Functionality:
 
-```sh
-npm test
-```
-
-## Deployment
-
-To create a production build:
-
-```sh
-npm run build
-```
-
-Preview the production build locally:
-
-```sh
-npx http-serve dist
-```
+- To restart the game, you need to click refresh in the browser. Every time with refresh the browser you will get the random position of images (section with existing images)
+- The game consists of three sections: a board for making a puzzle with clear puzzles, a counter of movements, and a panel for selecting existing pictures
+- The algorithm of the game is as follows: you need to complete the picture in the first section with as few movements as possible and chose the necessary pictures from the second image section
+- You can move pictures from the second section to the first by filling in empty cells
+- You can also move pictures to filled cells, while they will change places
