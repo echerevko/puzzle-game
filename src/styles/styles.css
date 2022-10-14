@@ -1,0 +1,39 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: sans-serif;
+  text-align: center;
+  width: 100%;
+}
+
+#board {
+  display: flex;
+  flex-wrap: wrap;
+  justify-self: center;
+  margin: 0 auto;
+  width: 729px;
+  height: 456px;
+  border: 2px solid greenyellow;
+}
+
+#board img {
+  width: 180px;
+  height: 150px;
+  border: 0.5px solid yellowgreen;
+}
+
+#cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 1092px;
+  height: 304px;
+  border: 2px solid yellowgreen;
+}
+
+#cards img {
+  width: 180px;
+  height: 150px;
+  border: 0.5px solid yellowgreen;
+}
