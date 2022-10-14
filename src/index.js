@@ -1,12 +1,6 @@
 import "./styles/styles.css";
 import { ROWS, COLUMNS } from "./assets/assets";
-import {
-  dragOver,
-  dragEnter,
-  dragLeave,
-  importAll,
-  dragStart2,
-} from "./assets/utils.js";
+import { dragOver, dragEnter, dragLeave, importAll } from "./assets/utils.js";
 import blankImg from "./images/blank.png";
 
 const cards = importAll(
@@ -17,8 +11,6 @@ let currTile;
 let otherTile;
 let counter = 0;
 const dragStart = dragStart2(currTile);
-
-// let dragStart = dragStart2(currTile);
 
 window.onload = function () {
   //Creating the puzzle section
@@ -65,10 +57,10 @@ window.onload = function () {
   });
 };
 
-// Start, Drop and End functions
-// function dragStart() {
-//   currTile = this; //this refers to image that was clicked on for dragging
-// }
+//Start, Drop and End functions
+function dragStart() {
+  currTile = this; //this refers to image that was clicked on for dragging
+}
 
 function dragDrop() {
   otherTile = this; //this refers to image that is being dropped on
